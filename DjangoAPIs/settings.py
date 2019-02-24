@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     # Main
     'updates',
     'status',
+    'accounts',
 
 ]
 

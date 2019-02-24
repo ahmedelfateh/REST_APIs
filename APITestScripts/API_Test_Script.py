@@ -154,8 +154,8 @@ headers = {
 }
 
 data = {
-    "username": "eslam",
-    "email": "eslam@eslam.com",
+    "username": "mo2",
+    "email": "mo2@mo2.com",
     "password": "qwer1234",
     "password2": "qwer1234",
 }

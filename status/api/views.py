@@ -34,7 +34,6 @@ class StatusAPIView(
 
     def get_queryset(self):
         request = self.request
-        print(request.user)
         qs = Status.objects.all()
         query = request.GET.get('q')
         if query is not None:
@@ -43,6 +42,9 @@ class StatusAPIView(
 
     def post(self, request, *args, **kwargs):
         return self.create(request, *args, **kwargs)
+
+    def perform_create(self, serializer):
+        serializer.save(user=self.request.user)
 
 
 # Detail View EndPoint

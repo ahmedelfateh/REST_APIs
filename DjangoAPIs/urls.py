@@ -19,8 +19,10 @@ urlpatterns = [
 
     url(r'^api/status/', include('status.api.urls')),
 
-    url(r'^api/token/auth/', obtain_jwt_token),
-    url(r'^api/token/auth/refresh', obtain_jwt_token)
+    url(r'^api/auth/', include('accounts.api.urls')),
+
+    # url(r'^api/auth/jwt/$', obtain_jwt_token),
+    # url(r'^api/auth/jwt/refresh/$', refresh_jwt_token),
 
     # url(r'^jsonres/', update_detail_view_JsonResponse,
     #     name='update_detail_view'),
