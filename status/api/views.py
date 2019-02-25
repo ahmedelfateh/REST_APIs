@@ -9,6 +9,7 @@ import json
 from django.shortcuts import get_object_or_404
 
 from status.models import Status
+from accounts.api.permissions import IsOwnerOrReadOnly
 from .serializers import StatusSerializer
 
 
@@ -56,7 +57,8 @@ class StatusAPIDetailView(
         mixins.DestroyModelMixin,):
 
     # authentication_classes = [authentication.SessionAuthentication]
-    # permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly,
+                          IsOwnerOrReadOnly]
     serializer_class = StatusSerializer
     queryset = Status.objects.all()
     lookup_field = 'id'  # changed from pk in the urls
