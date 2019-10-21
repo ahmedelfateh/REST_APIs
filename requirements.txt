@@ -22,7 +22,7 @@ smmap2==2.0.3
 urllib3==1.24.1
 wrapt==1.11.1
 
-Django==1.11.17
+Django==1.11.23
 django-filter==1.1.0
 djangorestframework==3.7.3
 djangorestframework-jwt==1.11.0
