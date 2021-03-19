@@ -24,7 +24,7 @@ wrapt==1.11.1
 
 Django==1.11.17
 django-filter==1.1.0
-djangorestframework==3.7.3
+djangorestframework==3.11.2
 djangorestframework-jwt==1.11.0
 pytz==2018.9
 requests==2.21.0
