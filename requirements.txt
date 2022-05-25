@@ -15,7 +15,7 @@ olefile==0.44
 Pillow==5.4.1
 pycodestyle==2.5.0
 pyflakes==2.1.0
-PyJWT==1.7.1
+PyJWT==2.4.0
 pylint==2.2.2
 six==1.12.0
 smmap2==2.0.3
