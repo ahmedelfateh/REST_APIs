@@ -1,6 +1,6 @@
 astroid==2.1.0
 autopep8==1.4.3
-certifi==2017.11.5
+certifi==2022.12.7
 chardet==3.0.4
 entrypoints==0.3
 flake8==3.7.5
